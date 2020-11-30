@@ -13,3 +13,4 @@ rules:
   indent: ["error", "tab"]
   no-tabs: 0
   no-multiple-empty-lines: 0
+  import/prefer-default-export: "off"
