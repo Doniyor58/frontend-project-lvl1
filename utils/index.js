@@ -1,1 +1,1 @@
-export const getRandomInt = () => Math.floor(Math.random() * Math.floor(100));
+export const getRandomInt = (maxVal = 100) => Math.floor(Math.random() * Math.floor(maxVal));
