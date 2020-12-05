@@ -3,6 +3,8 @@ brain-even: https://asciinema.org/a/1GB9Y4GTXiMchWbNoTuy5MlSD
 
 brain-calc: https://asciinema.org/a/BKRHdx0ZCrmDTI0F3Ylb9JWOu
 
+brain-gcd: https://asciinema.org/a/OA4LX5rZAcJDCAnI71Avsz3YA
+
 
 ### Hexlet tests and linter status:
 
