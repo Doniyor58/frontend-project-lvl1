@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import parityCheck from '../src/parity-check.js';
+import gameCycle from '../src/index.js';
+import { condition, getParamsForParityCheckGame } from '../src/games/parity-check.js';
 
-parityCheck();
+gameCycle(condition, getParamsForParityCheckGame);

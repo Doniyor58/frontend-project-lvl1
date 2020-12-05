@@ -1,6 +1,11 @@
+### Демонстрация игр:
+brain-even: https://asciinema.org/a/1GB9Y4GTXiMchWbNoTuy5MlSD
+
+brain-calc: https://asciinema.org/a/BKRHdx0ZCrmDTI0F3Ylb9JWOu
+
+
 ### Hexlet tests and linter status:
 
-### Процесс установки и пример запуска игры - https://asciinema.org/a/Ma1PRjrx6bO3KseIBtUoKiyBW
 
 [![Actions Status](https://github.com/Doniyor58/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Doniyor58/frontend-project-lvl1/actions)
 
