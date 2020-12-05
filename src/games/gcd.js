@@ -1,8 +1,14 @@
 import { getRandomInt } from '../../utils/index.js';
 
 export const getGcd = (a, b) => {
-	const biggest = a > b ? a : b;
-	const smallest = a < b ? a : b;
+	let biggest;
+	let smallest;
+
+	if (a > b) {
+		[biggest, smallest] = [a, b];
+	} else {
+		[biggest, smallest] = [b, a];
+	}
 
 	let gcd;
 
