@@ -1,4 +1,4 @@
-### Демонстрация игр:
+### Демонстрации игр:
 brain-even: https://asciinema.org/a/1GB9Y4GTXiMchWbNoTuy5MlSD
 
 brain-calc: https://asciinema.org/a/BKRHdx0ZCrmDTI0F3Ylb9JWOu
@@ -7,6 +7,7 @@ brain-gcd: https://asciinema.org/a/OA4LX5rZAcJDCAnI71Avsz3YA
 
 brain-progression: https://asciinema.org/a/5AdMmRNDHxXEfkiNJAt0bbMFl
 
+brain-prime: https://asciinema.org/a/keQuvUkrYbA27t5HrzNhCX5nt
 
 ### Hexlet tests and linter status:
 
