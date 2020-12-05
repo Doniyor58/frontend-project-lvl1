@@ -6,7 +6,7 @@ extends:
 parserOptions:
   ecmaVersion: 12
   sourceType: module
-rules: 
+rules:
   no-console: 0
   import/extensions: 0
   no-await-in-loop: 0
@@ -14,3 +14,4 @@ rules:
   no-tabs: 0
   no-multiple-empty-lines: 0
   import/prefer-default-export: "off"
+  implicit-arrow-linebreak: "off"

@@ -6,7 +6,7 @@ export const getParamsForCalculatorGame = () => {
 	const mathematicalOperations = ['+', '-', '*'];
 	const operationsCount = mathematicalOperations.length;
 
-	const randomOperation = mathematicalOperations[getRandomInt(operationsCount)];
+	const randomOperation = mathematicalOperations[getRandomInt(0, operationsCount)];
 
 	let a;
 	let b;
@@ -16,8 +16,8 @@ export const getParamsForCalculatorGame = () => {
 
 	switch (randomOperation) {
 	case '+':
-		a = getRandomInt(50);
-		b = getRandomInt(15);
+		a = getRandomInt(1, 50);
+		b = getRandomInt(1, 15);
 
 		question = `${a} + ${b}`;
 		rightAnswer = a + b;
@@ -25,15 +25,15 @@ export const getParamsForCalculatorGame = () => {
 
 	case '-':
 		a = getRandomInt();
-		b = getRandomInt(20);
+		b = getRandomInt(1, 20);
 
 		question = a > b ? `${a} - ${b}` : `${b} - ${a}`;
 		rightAnswer = a > b ? a - b : b - a;
 		break;
 
 	case '*':
-		a = getRandomInt(30);
-		b = getRandomInt(10);
+		a = getRandomInt(1, 30);
+		b = getRandomInt(1, 10);
 
 		question = `${a} * ${b}`;
 		rightAnswer = a * b;
