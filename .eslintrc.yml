@@ -9,9 +9,4 @@ parserOptions:
 rules:
   no-console: 0
   import/extensions: 0
-  no-await-in-loop: 0
-  indent: ["error", "tab"]
-  no-tabs: 0
-  no-multiple-empty-lines: 0
-  import/prefer-default-export: "off"
-  implicit-arrow-linebreak: "off"
+  no-underscore-dangle: [ 2, { "allow": [ "__filename", "__dirname" ] } ]
