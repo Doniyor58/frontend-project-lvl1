@@ -1,4 +1,6 @@
-import { getRandomInt } from '../../utils/index.js';
+import runGame from '../index.js';
+
+import { getRandomInt } from '../utils.js';
 
 export const condition = 'What is the result of the expression?';
 
@@ -47,5 +49,7 @@ export const getParamsForCalculatorGame = () => {
       rightAnswer = a + b;
   }
 
-  return [question, rightAnswer];
+  return [question, String(rightAnswer)];
 };
+
+export default () => runGame(condition, getParamsForCalculatorGame);

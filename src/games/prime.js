@@ -1,4 +1,6 @@
-import { getRandomInt } from '../../utils/index.js';
+import runGame from '../index.js';
+
+import { getRandomInt } from '../utils.js';
 
 export const isPrime = (int) => {
   for (let j = 2; j < int; j += 1) {
@@ -18,3 +20,5 @@ export const getParamsForPrimeGame = () => {
 
   return [question, rightAnswer];
 };
+
+export default () => runGame(condition, getParamsForPrimeGame);

@@ -1,4 +1,6 @@
-import { getRandomInt } from '../../utils/index.js';
+import runGame from '../index.js';
+
+import { getRandomInt } from '../utils.js';
 
 export const getGcd = (a, b) => {
   let biggest;
@@ -33,5 +35,7 @@ export const getParamsForGcdGame = () => {
   const question = `${a} ${b}`;
   const rightAnswer = getGcd(a, b);
 
-  return [question, rightAnswer];
+  return [question, String(rightAnswer)];
 };
+
+export default () => runGame(condition, getParamsForGcdGame);

@@ -1,4 +1,6 @@
-import { getRandomInt } from '../../utils/index.js';
+import runGame from '../index.js';
+
+import { getRandomInt } from '../utils.js';
 
 export const getProgression = (startInt, step, progressionLength) => new Array(progressionLength)
   .fill(startInt)
@@ -20,5 +22,7 @@ export const getParamsForProgressionGame = () => {
 
   const question = progression.join(' ');
 
-  return [question, rightAnswer];
+  return [question, String(rightAnswer)];
 };
+
+export default () => runGame(condition, getParamsForProgressionGame);

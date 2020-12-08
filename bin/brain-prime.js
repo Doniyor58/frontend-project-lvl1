@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import gameCycle from '../src/index.js';
-import { condition, getParamsForPrimeGame } from '../src/games/prime.js';
+import runGame from '../src/games/prime.js';
 
-gameCycle(condition, getParamsForPrimeGame);
+runGame();

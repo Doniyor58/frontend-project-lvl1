@@ -1,4 +1,6 @@
-import { getRandomInt, isEven } from '../../utils/index.js';
+import runGame from '../index.js';
+
+import { getRandomInt, isEven } from '../utils.js';
 
 export const condition = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -8,3 +10,5 @@ export const getParamsForParityCheckGame = () => {
 
   return [question, rightAnswer];
 };
+
+export default () => runGame(condition, getParamsForParityCheckGame);
