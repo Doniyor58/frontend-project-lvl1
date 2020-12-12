@@ -2,7 +2,7 @@ import runGame from '../index.js';
 
 import { getRandomInt } from '../utils.js';
 
-export const getGcd = (a, b) => {
+const getGcd = (a, b) => {
   let biggest;
   let smallest;
 
@@ -26,7 +26,7 @@ export const getGcd = (a, b) => {
   return gcd;
 };
 
-export const condition = 'Find the greatest common divisor of given numbers.';
+const condition = 'Find the greatest common divisor of given numbers.';
 
 export const getParamsForGcdGame = () => {
   const a = getRandomInt(1, 100);

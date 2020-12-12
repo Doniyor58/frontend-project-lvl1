@@ -2,7 +2,7 @@ import runGame from '../index.js';
 
 import { getRandomInt } from '../utils.js';
 
-export const isPrime = (int) => {
+const isPrime = (int) => {
   for (let j = 2; j < int; j += 1) {
     if (Number.isInteger(int / j)) {
       return false;
@@ -12,7 +12,7 @@ export const isPrime = (int) => {
   return true;
 };
 
-export const condition = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const condition = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export const getParamsForPrimeGame = () => {
   const question = getRandomInt();

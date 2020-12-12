@@ -2,13 +2,13 @@ import runGame from '../index.js';
 
 import { getRandomInt } from '../utils.js';
 
-export const getProgression = (startInt, step, progressionLength) => new Array(progressionLength)
+const getProgression = (startInt, step, progressionLength) => new Array(progressionLength)
   .fill(startInt)
   .map((el, index) => el + (step * index));
 
 export const condition = 'What number is missing in the progression?';
 
-export const getParamsForProgressionGame = () => {
+const getParamsForProgressionGame = () => {
   const startProgressionInteger = getRandomInt(1, 30);
   const progressionStep = getRandomInt(1, 10);
   const progressionLength = getRandomInt(5, 10);
