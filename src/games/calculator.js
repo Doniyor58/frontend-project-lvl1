@@ -4,39 +4,37 @@ import { getRandomInt } from '../utils.js';
 
 const condition = 'What is the result of the expression?';
 
-const getParamsForCalculatorGame = () => {
-  const mathematicalOperations = ['+', '-', '*'];
-  const operationsCount = mathematicalOperations.length - 1;
+const getParamsForRound = () => {
+  const operations = ['+', '-', '*'];
+  const operationsCount = operations.length - 1;
 
-  const randomOperation = mathematicalOperations[getRandomInt(0, operationsCount)];
+  const operator = operations[getRandomInt(0, operationsCount)];
 
-  const a = getRandomInt(0, 25);
-  const b = getRandomInt(0, 25);
+  const rightOperand = getRandomInt(0, 25);
+  const leftOperand = getRandomInt(0, 25);
 
-  let question;
+  const question = `${rightOperand} ${operator} ${leftOperand}`;
+
   let rightAnswer;
 
-  switch (randomOperation) {
+  switch (operator) {
     case '+':
-      question = `${a} + ${b}`;
-      rightAnswer = a + b;
+      rightAnswer = rightOperand + leftOperand;
       break;
 
     case '-':
-      question = `${a} - ${b}`;
-      rightAnswer = a - b;
+      rightAnswer = rightOperand - leftOperand;
       break;
 
     case '*':
-      question = `${a} * ${b}`;
-      rightAnswer = a * b;
+      rightAnswer = rightOperand * leftOperand;
       break;
 
     default:
-      throw new Error(`Неизвестная опреация ${randomOperation}`);
+      throw new Error(`Неизвестная опреация ${operator}`);
   }
 
   return [question, String(rightAnswer)];
 };
 
-export default () => runGame(condition, getParamsForCalculatorGame);
+export default () => runGame(condition, getParamsForRound);

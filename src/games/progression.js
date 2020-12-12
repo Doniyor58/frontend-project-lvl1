@@ -8,7 +8,7 @@ const getProgression = (startInt, step, progressionLength) => new Array(progress
 
 export const condition = 'What number is missing in the progression?';
 
-const getParamsForProgressionGame = () => {
+const getParamsForRound = () => {
   const startProgressionInteger = getRandomInt(1, 30);
   const progressionStep = getRandomInt(1, 10);
   const progressionLength = getRandomInt(5, 10);
@@ -25,4 +25,4 @@ const getParamsForProgressionGame = () => {
   return [question, String(rightAnswer)];
 };
 
-export default () => runGame(condition, getParamsForProgressionGame);
+export default () => runGame(condition, getParamsForRound);

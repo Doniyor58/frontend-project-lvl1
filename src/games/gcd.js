@@ -28,7 +28,7 @@ const getGcd = (a, b) => {
 
 const condition = 'Find the greatest common divisor of given numbers.';
 
-export const getParamsForGcdGame = () => {
+export const getParamsForRound = () => {
   const a = getRandomInt(1, 100);
   const b = getRandomInt(1, 50);
 
@@ -38,4 +38,4 @@ export const getParamsForGcdGame = () => {
   return [question, String(rightAnswer)];
 };
 
-export default () => runGame(condition, getParamsForGcdGame);
+export default () => runGame(condition, getParamsForRound);
